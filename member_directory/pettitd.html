@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mars is Dead</title>
+<link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(14,14,14);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+
+h1 {
+    
+font-family: "Courier New";
+    
+color: black;
+    
+font-size: 40px;
+  
+} 
+  
+
+h3 {
+    
+font-family: "Courier New";
+    
+color: black;
+    
+font-size: 30px;
+  
+} 
+ 
+
+h2 {
+    
+font-family: Arial, Helvetica, sans-serif;
+    
+color: white;
+    
+font-size: 30px;
+  
+} 
+  
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: rgb(10,60,145,0.9);
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(252,61,35);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p align="center"><img src="nasalogo.jpg" width="480px" height="300px"></p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>About Me</h1>
+    <h2 align="center">Donald Pettit</h2>
+    <p align="center"><img src="member_images/pettitpro.jpg" width="300px" height="400px"></p>
+    <p>Donald R. Pettit was selected by NASA in 1996.  The Silverton, Oregon native holds a Bachelor of Science in Chemical Engineering from Oregon State University and a Doctorate in Chemical Engineering from the University of Arizona.  Prior to becoming an astronaut, he worked as a staff scientist at the Los Alamos National Laboratory, New Mexico.  A veteran of three spaceflights, Pettit served as NASA Science Officer for Expedition 6 in 2003, operated the robotic arm for STS-126 in 2008 and served as a Flight Engineer for Expedition 30/31 in 2012, where he lived aboard the International Space Station for more than 6 months. </p>
+    <h3>More Pictures</h3>
+    <p align="center">
+    <img src="member_images/pettitshuttle.jpg" width="300px" height="250px"><br>
+    <img src="member_images/pettitspace.jpg" width="300px" height="250px"><br>
+<img src="member_images/pettitwork.jpg" width="300px" height="250px">
+</p>
+  </div>
+  <div class="main">
+    <h3>March 11th, 2021 18:13 [REDACTED]</h3>
+    <p style="padding-left:40px;">Never in my 37 years with NASA has something like this happened. I've never been so certain that my death was near.</p>
+    <h3>August 27th, 2020 08:03</h3>
+    <p style="padding-left:40px;"><img src="member_images/pettitfb1.jpg" width="600px" height="450px"></p>
+    <p style="padding-left:40px;">Here are a couple of solar images from the Red Planet taken with my improvised solar telescope during Exp 30/31.  The first shows the solar disk with sunspots where disk granularity is also visible.  The second was taken during the Transit of Venus (June 2012), a photographic opportunity that will not repeat itself for about another 100 years.  What a pleasure it was to be in the right place at the right time to record that event!<br><br>
+It's been an honor to be up here, several years after my first spaceflight and time on the International Space Station. I'm happy to be making a difference in helping the first settlers make their way to Mars.</p>
+    <br>
+  <h3>September 14th, 2017 10:28</h3>
+    <p style="padding-left:40px;"><img src="member_images/pettitfb2.jpg" width="600px" height="450px"></p>
+    <p style="padding-left:40px;">Taking photographs of the sun on Space Station:  I used a 1200mm telephoto lens with a full aperture neutral density solar filter that I had flown up in my personal effects. The older Nikon D2x camera body was used (instead of our newer D3s bodies) because it had smaller pixels and thus gave about 1200 pixels across the solar image diameter instead of 850 (for the D3s).  Light sensitivity was not a factor so the older camera body actually gave higher resolution.  To point this solar telescope (note, the vertical field of view was about 0.6 degrees and finding the solar disk at 0.5 degrees could be challenging) at the sun I used a simple pinhole projector made from cardboard (old que cards for flying the robotic arm) taped to the lens. I oriented the camera until I saw a sun image on the cardboard cross hairs and then looked through the finder, focused, and took photos.  To help stabilize the camera I mounted it on one of our "monopod" brackets.<br><br>
+Now that we're on Mars and my camera made it safely, I'm excited to see just how many amazing photos I can take of our experience. I was concerned about the safety of my camera in flight, but I'm pleased at the results.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h1>&#169; NASA and NASAbook INC<br>
+<h5><a href="../memberdirectory.html">Return to Member Directory</a></h5>
+</div>
+
+</body>
+</html>

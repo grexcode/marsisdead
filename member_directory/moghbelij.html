@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mars is Dead</title>
+<link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(14,14,14);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+
+h1 {
+    
+font-family: "Courier New";
+    
+color: black;
+    
+font-size: 40px;
+  
+} 
+  
+
+h3 {
+    
+font-family: "Courier New";
+    
+color: black;
+    
+font-size: 30px;
+  
+} 
+ 
+
+h2 {
+    
+font-family: Arial, Helvetica, sans-serif;
+    
+color: white;
+    
+font-size: 30px;
+  
+} 
+  
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: rgb(10,60,145,0.9);
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(252,61,35);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p align="center"><img src="nasalogo.jpg" width="480px" height="300px"></p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>About Me</h1>
+    <h2 align="center">Jasmin Moghbeli</h2>
+    <p align="center"><img src="member_images/moghbelipro.jpg" width="300px" height="350px"></p>
+    <p>Jasmin Moghbeli was selected by NASA to join the 2017 Astronaut Candidate Class. She reported for duty in August 2017 and having completed the initial astronaut candidate training is now eligible for a mission assignment. The New York native earned a Bachelor of Science degree in Aerospace Engineering with Information Technology at the Massachusetts Institute of Technology and a Master of Science in Aerospace Engineering from the Naval Postgraduate School. Moghbeli, an AH-1W Super Cobra pilot and Marine Corps test pilot, has over 150 combat missions and 2,000 hours of flight time in over 25 different aircraft.</p>
+    <h3>More Pictures</h3>
+    <p align="center">
+    <img src="member_images/moghbeliflight.jpg" width="300px" height="300px"><br>
+    <img src="member_images/moghbeliscience.jpg" width="300px" height="250px"><br>
+    <img src="member_images/moghbeliformal.jpg" width="300px" height="250px">
+</p>
+  </div>
+  <div class="main">
+     <h3>March 2nd, 2021 19:23 [REDACTED]</h3>
+    <p style="padding-left:40px;">It appears systems have begun to fail. We think we've found the stophack, but if not, please tell my kids I love them.</p>
+    <h3>January 28th, 2021 17:01</h3>
+    <p style="padding-left:40px;"><img src="member_images/moghbelifb1.jpg" width="650px" height="450px"></p>
+    <p style="padding-left:40px;">Remembering the crews of Apollo 1, Challenger, and Columbia and thinking of their families on this day of remembrance. May we never forget their sacrifices and the lessons learned as we continue to push the boundaries of human space exploration. #NASARemembers<br><br>
+Thankful today and everyday for all of the work that goes into space travel today to prevent similar horrorific events from happening. Each of these tests and take-offs are better preparing us for a future in which everyone will feel comfortable traveling and living in space. At least for me, I know the safety systems are strong enough to prevent anything terrible that could occur. We're safe here in space, despite how unlikely that seems.</p>
+    <br>
+  <h3>August 3rd, 2017 03:27</h3>
+    <p style="padding-left:40px;"><img src="member_images/moghbelifb2.jpg" width="650px" height="450px"></p>
+    <p style="padding-left:40px;">It's launch day! The rest of my cohort and myself have been training for this day for what feels like years. We're on our way to build the first colony on Mars, something we've been striving for forever. It's here! The day is finally here!<br><br>
+My crewmates and I have spend the past few weeks getting to know each other, especially seeing as it's just the 7 of us stranded here in space until the colonists arrive. There have been bonding activities, games, socials, and everything in between to get to know each other well. It'll be a year of strenous activity building the structures for the colonists to arrive in. We won't have a lot of downtime or bonding time, so it'll require a lot of trust. I think we've gotten there! There might be one or two of my crew I don't rely on as much, but for the most part I know we're all here because we're invested in the future!</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h1>&#169; NASA and NASAbook INC<br>
+<h5><a href="../memberdirectory.html">Return to Member Directory</a></h5>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mars is Dead</title>
+<link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(14,14,14);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+
+h1 {
+    
+font-family: "Courier New";
+    
+color: black;
+    
+font-size: 40px;
+  
+} 
+  
+
+h3 {
+    
+font-family: "Courier New";
+    
+color: black;
+    
+font-size: 30px;
+  
+} 
+ 
+
+h2 {
+    
+font-family: Arial, Helvetica, sans-serif;
+    
+color: white;
+    
+font-size: 30px;
+  
+} 
+  
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: rgb(10,60,145,0.9);
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(252,61,35);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p align="center"><img src="nasalogo.jpg" width="480px" height="300px"></p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>About Me</h1>
+    <h2 align="center">Tyler "Nick" Hague</h2>
+    <p align="center"><img src="member_images/haguet.jpg" width="300px" height="350px"></p>
+    <p>Tyler N. Hague was selected by NASA as an astronaut in 2013. The Kansas native earned a Bachelor of Science in Astronautical Engineering from the United States Air Force Academy in 1998, and a Master of Science in Aeronautical and Astronautical Engineering from the Massachusetts Institute of Technology in 2000. In 2009, Hague was selected for the Air Force Fellows program in Washington, D.C., and was a staff member in the United States Senate. Hague most recently served as Flight Engineer on the International Space Station for Expedition 59 and 60.</p>
+    <h3>More Pictures</h3>
+    <p align="center">
+    <img src="member_images/hagueoutside.jpg" width="350px" height="250px"><br>
+    <img src="member_images/haguecrew.jpg" width="350px" height="250px"><br>
+<img src="member_images/hagueflight.jpg" width="350px" height="250px">
+</p>
+  </div>
+  <div class="main">
+    <h3>October 21st, 2020 13:39</h3>
+    <p style="padding-left:40px;"><img src="member_images/haguespacewalk.jpg" width="550px" height="450px"></p>
+    <p style="padding-left:40px;">You guys crushed it! Congrats on the #AllWomanSpacewalk...making history look like just another day at the office.<br><br>
+Although it's the 221st spacewalk performed in support of space station assembly, it's the first to be conducted entirely by women, NASA astronauts Jessica Meir and Christina Koch. It's the first spacewalk for Meir; she'll become the 15th woman overall and 14th U.S. woman to spacewalk. Spacewalk assignments are always made on the basis of which astronauts are best prepared to accomplish the tasks at hand under the conditions at the time. Spacewalks are not easy; astronauts typically describe them as the most physically challenging thing they do.
+</p>
+    <br>
+  <h3>June 2nd, 2020 20:49</h3>
+    <p style="padding-left:40px;"><img src="member_images/haguespace.jpg" width="650px" height="450px"></p>
+    <p style="padding-left:40px;">What an extraordinary journey! Part of what has made this experience so special was being here with my friends, classmates and our international partners. Thank you to all involved in the success of my mission on the International Space Station. I'm coming home!<br><br>It takes a lot of work to survive in space, something that no amount of training can fully make someone prepared for. I'm thankful to not have done it just once, but twice! I'm always ready and on call to do it again, if NASA ever needs me. Good luck to the next set of astronauts!
+</p>
+<h3>April 14th, 2020 11:23 [REDACTED]</h3>
+    <p style="padding-left:40px;">When are we allowed to leave this planet?</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h1>&#169; NASA and NASAbook INC<br>
+<h5><a href="../memberdirectory.html">Return to Member Directory</a></h5>
+</div>
+
+</body>
+</html>
