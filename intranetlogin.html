@@ -7,56 +7,25 @@
 <title>Mars is Dead</title>
 <link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
 <style>
-
 body {
-  
-background-color: rgb(10,15,29);
-
-}
- 
-h1 {
-    
-font-family: "Courier New";
-    
-color: chartreuse;
-    
-font-size: 60px;
-  
-} 
-  
-p {
-    
-font-family: "Courier New";
-    
-color: chartreuse;
-    
-font-size: 25px;
- 
- }
-
-  br {
-  margin:60px 0 0
+  background: #44c4e7
+  background-size: cover;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &::before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #44c4e7;
+    /* IE Fallback */
+    background: rgba(68,196,231, 0.8);
+    width: 100%;
+    height: 100%;
   }
-
-a {
-    
-font-family: "Courier New";
-    
-color: chartreuse;
-    
-font-size: 25px;
- 
- }
-
-ul {
-    
-font-family: "Courier New";
-    
-color: chartreuse;
-    
-font-size: 25px;
- 
- }
+}
 
 .form {
   position: absolute;
@@ -108,7 +77,10 @@ font-size: 25px;
       background: #369cb8;
     }
   }
+}
+
 .error, .valid{display:none;}
+
 
 </style>
 <script>
