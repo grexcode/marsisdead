@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Personal Desktop Login"
-AuthUserFile ../.htpasswd
+AuthUserFile www/sites/www.github.com/grexcode/marsisdead/.htpasswd
 require valid-user
