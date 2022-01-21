@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Mars is Dead</title>
+<link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
+<style>
+
+body {
+  
+background-color: rgb(10,15,29);
+
+}
+ 
+h1 {
+    
+font-family: "Courier New";
+    
+color: chartreuse;
+    
+font-size: 60px;
+  
+} 
+  
+p {
+    
+font-family: "Courier New";
+    
+color: chartreuse;
+    
+font-size: 25px;
+ 
+ }
+
+  br {
+  margin:60px 0 0
+  }
+
+a {
+    
+font-family: "Courier New";
+    
+color: chartreuse;
+    
+font-size: 25px;
+ 
+ }
+
+ul {
+    
+font-family: "Courier New";
+    
+color: chartreuse;
+    
+font-size: 25px;
+ 
+ }
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 285px;
+  margin: -140px 0 0 -182px;
+  padding: 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  h2 {
+    margin: 0 0 20px;
+    line-height: 1;
+    color: #44c4e7;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  input {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    font-size: 14px;
+    font-wieght: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.2s linear;
+    &input:focus {
+      color: #333;
+      border: 1px solid #44c4e7;
+    }
+  }
+  button {
+    cursor: pointer;
+    background: #44c4e7;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    &:hover {
+      background: #369cb8;
+    }
+
+.error, .valid{display:none;}
+
+</style>
+<script>
+$(document).ready(function() {
+    //$('#username').focus();
+
+    $('#submit').click(function() {
+
+        event.preventDefault(); // prevent PageReLoad
+
+       var ValidEmail = $('#username').val() === 'invitado'; // User validate
+var ValidPassword = $('#password').val() === 'hgm2015'; // Password validate
+
+        if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
+            $('.valid').css('display', 'block');
+            window.location = "http://arkev.com"; // go to home.html
+        }
+        else {
+            $('.error').css('display', 'block'); // show error msg
+        }
+    });
+});
+</script>  
+
+</head>
+
+<body>
+
+
+<h1 align="center">Intranet Login</h1>
+<section class="form animated flipInX">
+  <h2>Login To Your Account</h2>
+  <p class="valid">Valid. Please wait a moment.</p>
+  <p class="error">Error. Please enter correct Username &amp; password.</p>
+  <form class="loginbox" autocomplete="off">
+    <input placeholder="Username" type="text" id="username"></input>
+    <input placeholder="Password" type="password" id="password"></input>
+<button id="submit">Login</button>
+</form>
+</section>
+
+</body>
+</html>
