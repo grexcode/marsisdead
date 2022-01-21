@@ -1,4 +1,4 @@
 AuthType Basic
-AuthName "Protected Site"
-AuthUserFile grexcode/home/marsisdead/.htpasswd
+AuthName "Personal Desktop Login"
+AuthUserFile ../.htpasswd
 require valid-user
