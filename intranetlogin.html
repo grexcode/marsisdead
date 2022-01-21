@@ -107,7 +107,7 @@ font-size: 25px;
     &:hover {
       background: #369cb8;
     }
-
+  }
 .error, .valid{display:none;}
 
 </style>
@@ -119,8 +119,8 @@ $(document).ready(function() {
 
         event.preventDefault(); // prevent PageReLoad
 
-       var ValidEmail = $('#username').val() === 'invitado'; // User validate
-var ValidPassword = $('#password').val() === 'hgm2015'; // Password validate
+       var ValidEmail = $('#username').val() === 'nybergk'; // User validate
+var ValidPassword = $('#password').val() === 'june1817'; // Password validate
 
         if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
             $('.valid').css('display', 'block');
@@ -144,7 +144,7 @@ var ValidPassword = $('#password').val() === 'hgm2015'; // Password validate
   <p class="valid">Valid. Please wait a moment.</p>
   <p class="error">Error. Please enter correct Username &amp; password.</p>
   <form class="loginbox" autocomplete="off">
-    <input placeholder="Username" type="text" id="username"></input>
+    <input placeholder="Employee ID" type="text" id="username"></input>
     <input placeholder="Password" type="password" id="password"></input>
 <button id="submit">Login</button>
 </form>
