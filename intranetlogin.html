@@ -6,26 +6,16 @@
 
 <title>Mars is Dead</title>
 <link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript">
-$(document).ready(function() {
-    //$('#username').focus();
-
-    $('#submit').click(function() {
-
-        event.preventDefault(); // prevent PageReLoad
-
-       var ValidEmail = $('#username').val() == 'nybergk'; // User validate
-var ValidPassword = $('#password').val() == 'june1817'; // Password validate
-
-        if (ValidEmail == true && ValidPassword == true) { // if ValidEmail & ValidPassword
-            $('.valid').css('display', 'block');
-            window.location = "https://grexcode.github.io/marsisdead/personalcomputer/desktop.html"; // go to home.html
-        }
-        else {
-            $('.error').css('display', 'block'); // show error msg
-        }
-    });
-});
+<script>
+ConnectionString connectionString = new ConnectionString("mongodb+srv://<nybergk>:<june1817>@marsisdead.adjgy.mongodb.net/personalComp?retryWrites=true&w=majority");
+MongoClientSettings settings = MongoClientSettings.builder()
+        .applyConnectionString(connectionString)
+        .serverApi(ServerApi.builder()
+            .version(ServerApiVersion.V1)
+            .build())
+        .build();
+MongoClient mongoClient = MongoClients.create(settings);
+MongoDatabase database = mongoClient.getDatabase("test");
 </script>  
   <style>
 body {
