@@ -6,17 +6,6 @@
 
 <title>Mars is Dead</title>
 <link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
-<script>
-ConnectionString connectionString = new ConnectionString("mongodb+srv://<nybergk>:<june1817>@marsisdead.adjgy.mongodb.net/personalComp?retryWrites=true&w=majority");
-MongoClientSettings settings = MongoClientSettings.builder()
-        .applyConnectionString(connectionString)
-        .serverApi(ServerApi.builder()
-            .version(ServerApiVersion.V1)
-            .build())
-        .build();
-MongoClient mongoClient = MongoClients.create(settings);
-MongoDatabase database = mongoClient.getDatabase("test");
-</script>  
   <style>
 body {
   background: #OOOOOO no-repeat center center fixed;
