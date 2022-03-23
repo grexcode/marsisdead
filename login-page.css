@@ -57,6 +57,7 @@ body {
 }
 
 .login-form-field::placeholder {
+ font-family: "Courier New";
   color: black;
 }
 
