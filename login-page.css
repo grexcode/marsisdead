@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-image: url("intranetbackground.jpg");
   height: 100%;
   margin: 0;
   font-family: "Courier New";
@@ -10,7 +11,6 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-image: url("https://grexcode.github.io/marsisdead/intranetbackground.jpg");
 }
 
 #main-holder {
