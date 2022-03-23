@@ -10,7 +10,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background: "intranetbackground.jpg";
+  background-image: "intranetbackground.jpg";
 }
 
 #main-holder {
