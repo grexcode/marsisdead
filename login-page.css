@@ -6,6 +6,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Courier New";
+  font-color: white;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -18,7 +19,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: chartreuse;
+  background-color: black;
   border-radius: 7px;
   box-shadow: 0px 0px 5px 2px black;
 }
@@ -56,7 +57,7 @@ body {
 }
 
 .login-form-field::placeholder {
-  color: #3a3a3a;
+  color: black;
 }
 
 .login-form-field {
