@@ -5,11 +5,11 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: Courier New;
+  font-family: "Courier New";
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: rgb(10,15,29);
+  background-color: #0a0f1d;
 }
 
 #main-holder {
