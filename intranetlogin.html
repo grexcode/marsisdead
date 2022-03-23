@@ -1,104 +1,42 @@
+
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
-<title>Mars is Dead</title>
 <link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
+<script language="javascript">
+function pasuser(form) { 
+if (form.id.value=="nybergk") { 
+if (form.pass.value=="june1817") { location="https://grexcode.github.io/marsisdead/personalcomputer/desktop.html" } 
+else { alert("Wrong Password") } 
+} 
+else { alert("Wrong Username") } 
+} 
+</script>
   <style>
 body {
-  background: #OOOOOO no-repeat center center fixed;
-  background-size: cover;
-  font-family: "Roboto";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  &::before {
-    z-index: -1;
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #44c4e7;
-    /* IE Fallback */
-    background: rgba(68,196,231, 0.8);
-    width: 100%;
-    height: 100%;
-  }
+background-color: rgb(10,15,29);
 }
-
-.form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #fff;
-  width: 285px;
-  margin: -140px 0 0 -182px;
-  padding: 40px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-  h2 {
-    margin: 0 0 20px;
-    line-height: 1;
-    color: #44c4e7;
-    font-size: 18px;
-    font-weight: 400;
-  }
-  input {
-    outline: none;
-    display: block;
-    width: 100%;
-    margin: 0 0 20px;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    color: #ccc;
-    font-family: "Roboto";
-    box-sizing: border-box;
-    font-size: 14px;
-    font-wieght: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: 0.2s linear;
-    &input:focus {
-      color: #333;
-      border: 1px solid #44c4e7;
-    }
-  }
-  button {
-    cursor: pointer;
-    background: #44c4e7;
-    width: 100%;
-    padding: 10px 15px;
-    border: 0;
-    color: #fff;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 400;
-    &:hover {
-      background: #369cb8;
-    }
-  }
-}
-
-.error, .valid{display:none;}
-
+ 
+h1 { 
+font-family: "Courier New";   
+color: chartreuse;   
+font-size: 60px; 
+} 
+  
+p {
+font-family: "Courier New";
+color: chartreuse;    
+font-size: 25px;
+ 
+ }
 
 </style>
 </head>
-
 <body>
-
-
-<h1 align="center">Intranet Login</h1>
-<section class="form animated flipInX">
-  <h2>Enter your credentials.</h2>
-  <p class="valid">Valid. Please wait a moment.</p>
-  <p class="error">Error. Please enter correct Username & password.</p>
-  <form class="loginbox" autocomplete="off">
-    <input placeholder="Employee ID" type="text" id="username"></input>
-    <input placeholder="Password" type="password" id="password"></input>
-<button id="submit">Login</button>
+<form name="login">
+Username: < input name="id" size="6" type="text">
+Password: < input name="pass" size="6" type="password">
+<input value="Login" onclick="pasuser(this.form)" type="button">
 </form>
-</section>
-
 </body>
 </html>
