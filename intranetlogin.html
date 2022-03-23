@@ -1,46 +1,30 @@
 
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
-<script language="javascript">
-function pasuser(form) { 
-if (form.id.value=="nybergk") { 
-if (form.pass.value=="june1817") { location="https://grexcode.github.io/marsisdead/personalcomputer/desktop.html" } 
-else { alert("Wrong Password") } 
-} 
-else { alert("Wrong Username") } 
-} 
-</script>
-  <style>
-body {
-background-color: rgb(10,15,29);
-}
- 
-h1 { 
-font-family: "Courier New";   
-color: chartreuse;   
-font-size: 60px; 
-} 
-  
-p {
-font-family: "Courier New";
-color: chartreuse;    
-font-size: 25px;
- 
- }
+<html lang="en">
 
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login-page.css">
+  <script defer src="login-page.js"></script>
 </head>
+
 <body>
-<p>
-<form name="login">
-  <label for="id">Username:</label> 
-  < input name="id" size="6" type="text"><br>
-<label for="pass">Password: </label>
-  < input name="pass" size="6" type="password">
-<input value="Login" onclick="pasuser(this.form)" type="button">
-</form>
-  </p>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main>
 </body>
+
 </html>
