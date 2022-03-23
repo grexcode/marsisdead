@@ -10,7 +10,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #162140;
+  background: "intranetlogin.jpg";
 }
 
 #main-holder {
