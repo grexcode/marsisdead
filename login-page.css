@@ -10,7 +10,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #0a0f1d;
+  background-color: #162140;
 }
 
 #main-holder {
@@ -19,7 +19,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #162140;
+  background-color: #0a0f1d;
   border-radius: 7px;
   box-shadow: 0px 0px 5px 2px black;
 }
