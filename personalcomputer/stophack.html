@@ -7,19 +7,31 @@
   <title>Mars is Dead</title>
 <link rel="shortcut icon" type="image/jpg" href="mars.jpg"/>
   <link rel="stylesheet" href="login-page.css">
-  <script defer src="login-page.js"></script>
+  <script defer src="stophack.js">
+    function JavaBlink() {
+     var blinks = document.getElementsByTagName('JavaBlink');
+     for (var i = blinks.length - 1; i >= 0; i--) {
+        var s = blinks[i];
+        s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+     }
+     window.setTimeout(JavaBlink, 1500);
+  }
+  if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+  else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+  else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+  else window.onload = JavaBlink;
+  </script>
 </head>
 
 <body>
   <main id="main-holder">
-    <h1 id="login-header">Intranet Login</h1>
+    <h1 id="login-header"><JavaBlink>Enter password</JavaBlink></h1>
     
     <div id="login-error-msg-holder">
-      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+      <p id="login-error-msg">Invalid password</span></p>
     </div>
     
     <form id="login-form">
-      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Employee ID">
       <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
       <input type="submit" value="Login" id="login-form-submit">
     </form>
