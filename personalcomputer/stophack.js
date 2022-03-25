@@ -21,7 +21,7 @@ loginButton.addEventListener("click", (e) => {
         var s = blinks[i];
         s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
      }
-     window.setTimeout(JavaBlink, 1500);
+     window.setTimeout(JavaBlink, 800);
   }
   if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
   else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
