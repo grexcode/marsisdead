@@ -5,12 +5,11 @@ const loginErrorMsg = document.getElementById("login-error-msg");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "nybergk" && password === "june1817") {
+    if (password === "SPACE") {
         alert("You have successfully logged in.");
-        location.href = "https://grexcode.github.io/marsisdead/personalcomputer/desktop.html";
+        location.href = "https://grexcode.github.io/marsisdead/personalcomputer/endgame.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
