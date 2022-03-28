@@ -49,7 +49,13 @@ body{
 </head>
 <body>
 
-<p class="line-1 anim-typewriter">Well,<br>you've done it.<br>Somehow. Some kind of way, you've done it.<br>Systems re-engaged.</p>
+<p class="line-1 anim-typewriter">Well,<br>you've done it.<br>Somehow. Some kind of way, you've done it.<br>Systems re-engaged.<br>
+ [boot loader]<br>
+timeout=30<br>
+default=multi(0)disk(0)rdisk(0)partition(1)\WINDOWS<br>
+[operating systems]<br>
+multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows XP Professional" /fastdetect<br>
+C:\CMDCONS\BOOTSECT.DAT="Microsoft Windows Recovery Console" /cmdcons<br></p>
 
 
 
