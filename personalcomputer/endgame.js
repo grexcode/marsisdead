@@ -7,7 +7,7 @@ loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const password = loginForm.password.value;
 
-    if (password === "marsisdead") {
+    if (password === "mars is dead") {
         alert("You have stopped the hack :(");
         location.href = "https://grexcode.github.io/marsisdead/personalcomputer/thefinale.html";
     } else {
