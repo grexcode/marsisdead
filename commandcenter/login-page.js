@@ -10,7 +10,7 @@ loginButton.addEventListener("click", (e) => {
 
     if (password === "sofia") {
         alert("You have successfully logged in.");
-        location.href = "https://grexcode.github.io/marsisdead/personalcomputer/desktop.html";
+        location.href = "https://grexcode.github.io/marsisdead/commandcenter/success.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
