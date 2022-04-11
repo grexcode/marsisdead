@@ -13,7 +13,7 @@ loginButton.addEventListener("click", (e) => {
     } else {
         loginErrorMsg.style.opacity = 1;
     }
-})
+}
 
  function JavaBlink() {
      var blinks = document.getElementsByTagName('JavaBlink');
